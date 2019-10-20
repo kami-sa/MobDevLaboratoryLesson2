@@ -1,2 +1,2 @@
-include ':app', ':lifecycleactivity', ':multiactivity', ':intentfilter', ':toastapp'
+include ':app', ':lifecycleactivity', ':multiactivity', ':intentfilter', ':toastapp', ':notificationapp', ':dialogapp'
 rootProject.name='LaboratoryLesson2'
