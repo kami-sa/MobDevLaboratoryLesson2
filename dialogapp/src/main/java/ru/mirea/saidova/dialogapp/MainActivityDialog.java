@@ -14,8 +14,11 @@ public class MainActivityDialog extends AppCompatActivity {
         setContentView(R.layout.activity_main_dialog);
     }
     public void onClickShowDialog(View view) {
-        MyAlertDialogFragment dialogFragment = new MyAlertDialogFragment ();
-        dialogFragment.show(getSupportFragmentManager(), "dialog");
+       // MyAlertDialogFragment dialogFragment = new MyAlertDialogFragment ();
+       // dialogFragment.show(getSupportFragmentManager(), "dialog");
+        MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
+        timeDialog.show(getSupportFragmentManager(), "dialog");
+
     }
 
     public void onOkClicked() {
