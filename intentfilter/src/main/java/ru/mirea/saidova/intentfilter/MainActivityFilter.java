@@ -19,6 +19,8 @@ public class MainActivityFilter extends AppCompatActivity {
             startActivity(openLinkIntent);
          } else {
              Log.d("Intent", "Проблема с намерением!");
-            }
+        }
+
+
     }
 }
