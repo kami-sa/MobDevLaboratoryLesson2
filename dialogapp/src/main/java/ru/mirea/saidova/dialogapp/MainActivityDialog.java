@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivityDialog extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,12 @@ public class MainActivityDialog extends AppCompatActivity {
        // dialogFragment.show(getSupportFragmentManager(), "dialog");
         MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
         timeDialog.show(getSupportFragmentManager(), "dialog");
+        /*TextView tvTime = (TextView) findViewById(R.id.tvTime);
+        if timeDialog.
+        tvTime.setText(timeDialog.getTime());*/
+        Toast.makeText(getApplicationContext(), timeDialog.getTime(), Toast.LENGTH_LONG).show();
+
+
 
     }
 
