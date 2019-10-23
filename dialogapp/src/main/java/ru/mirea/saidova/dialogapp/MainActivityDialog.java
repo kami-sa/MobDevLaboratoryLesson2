@@ -16,13 +16,14 @@ public class MainActivityDialog extends AppCompatActivity {
     public void onClickShowDialog(View view) {
        // MyAlertDialogFragment dialogFragment = new MyAlertDialogFragment ();
        // dialogFragment.show(getSupportFragmentManager(), "dialog");
-        MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
-        timeDialog.show(getSupportFragmentManager(), "dialog");
+//        MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
+//        timeDialog.show(getSupportFragmentManager(), "dialog");
         /*TextView tvTime = (TextView) findViewById(R.id.tvTime);
         if timeDialog.
         tvTime.setText(timeDialog.getTime());*/
-        Toast.makeText(getApplicationContext(), timeDialog.getTime(), Toast.LENGTH_LONG).show();
-
+        //Toast.makeText(getApplicationContext(), timeDialog.getTime(), Toast.LENGTH_LONG).show();
+        MyDateDialogFragment dateDialog = new MyDateDialogFragment();
+        dateDialog.show(getSupportFragmentManager(), "dialog");
 
 
     }
