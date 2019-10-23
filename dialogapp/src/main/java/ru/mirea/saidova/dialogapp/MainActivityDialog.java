@@ -29,10 +29,15 @@ public class MainActivityDialog extends AppCompatActivity {
         dateDialog.show(getSupportFragmentManager(), "dialog");
     }
 
+    public void onClickPD1 (View view)
+    {
+        MyProgressDialog prDialog = new MyProgressDialog();
+        prDialog.show(getSupportFragmentManager(), "dialog");
+    }
 
-        public void onOkClicked() {
-        Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Иду дальше\"!",
-                Toast.LENGTH_LONG).show();
+    public void onOkClicked() {
+    Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Иду дальше\"!",
+                   Toast.LENGTH_LONG).show();
     }
     public void onCancelClicked() {
         Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Нет\"!",
