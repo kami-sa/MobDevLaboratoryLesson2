@@ -13,22 +13,24 @@ public class MainActivityDialog extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dialog);
     }
-    public void onClickShowDialog(View view) {
+    public void onClickShowTimeDialog(View view) {
        // MyAlertDialogFragment dialogFragment = new MyAlertDialogFragment ();
        // dialogFragment.show(getSupportFragmentManager(), "dialog");
-//        MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
-//        timeDialog.show(getSupportFragmentManager(), "dialog");
+        MyTimeDialogFragment timeDialog = new MyTimeDialogFragment();
+        timeDialog.show(getSupportFragmentManager(), "dialog");
         /*TextView tvTime = (TextView) findViewById(R.id.tvTime);
         if timeDialog.
         tvTime.setText(timeDialog.getTime());*/
         //Toast.makeText(getApplicationContext(), timeDialog.getTime(), Toast.LENGTH_LONG).show();
-        MyDateDialogFragment dateDialog = new MyDateDialogFragment();
-        dateDialog.show(getSupportFragmentManager(), "dialog");
-
 
     }
+    public void onClickShowDateDialog(View view) {
+        MyDateDialogFragment dateDialog = new MyDateDialogFragment();
+        dateDialog.show(getSupportFragmentManager(), "dialog");
+    }
 
-    public void onOkClicked() {
+
+        public void onOkClicked() {
         Toast.makeText(getApplicationContext(), "Вы выбрали кнопку \"Иду дальше\"!",
                 Toast.LENGTH_LONG).show();
     }
